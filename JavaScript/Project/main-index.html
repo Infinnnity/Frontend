@@ -1,0 +1,285 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="./css/main.css">
+        <title>Олимп - магазин ювелирных украшений</title>
+    </head>
+    <body>
+        <nav class="navbar bg-primary">
+            <div class="container navbar-header">
+                <div class="sidebar-container">
+                    <div class="sidebar_container block_sidebar">
+                        <div class="block_sidebar dropdown">
+                            <button class="dropbtn">Контакты:</button>
+                            <div class="dropdown-content">
+                                <a href="https://instagram.com">Instagram</a>
+                                <a href="https://vk.com">VK</a>
+                                <a href="https://www.figma.com/file/vizRBGr9ZycBSPlewSq1ia/Positioning?node-id=1%3A2">Figma</a>
+                                <a href="https://www.w3schools.com/howto/howto_css_dropdown.asp">YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sidebar_container block_sidebar">
+                        <div class="block_sidebar dropdown">
+                            <button class="dropbtn">Полезные ссылки:</button>
+                            <div class="dropdown-content">
+                                <a href="https://gitlab.com/">GIT lub</a>
+                                <a href="https://www.w3schools.com/howto/howto_css_dropup.asp">Sidebar</a>
+                                <a href="https://www.w3schools.com/css/tryit.asp?filename=trycss_position_fixed">Position fixed</a>
+                                <a href="https://www.w3schools.com/howto/howto_css_dropdown.asp">CSS_Dropdown</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="header-tools">
+                    <a href="form-index.html" class="enter-nav" target="_blank">
+                        <img class="w-75" src="./node_modules/bootstrap-icons/icons/bag-check.svg" alt="">
+                        <span class="enter-span">Войти</span>
+                    </a>
+                    <a href="basket.html" class="enter-nav" target="_blank">
+                        <img class="w-50" src="./node_modules/bootstrap-icons/icons/cart-check-fill.svg" alt="">
+                        <span class="enter-span">Корзина</span>
+                    </a>
+                </div>
+            </div>
+        </nav>
+        <header>
+            <section class="section-header">
+                <div class="container-xxl">
+                    <div class="header">
+                        <h4 class="header__text">OLYMP</h4>
+                        <h2 class="header__text2">Магазин ювелирных украшений</h2>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div class="container-xxl">
+                    <div id="carouseControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <h2>Бриллианты Якутии<img src="https://img.icons8.com/color/48/000000/diamond-ring.png" alt=""/></h2>
+                                <img src="./img/5.png" class="d-block w-100" alt="">
+                            </div>
+                            <div class="carousel-item">
+                                <h2>Золото и бриллианты - элегантная классика ювелирного искусства<img src="https://img.icons8.com/color/48/000000/diamond.png" alt=""/></h2>
+                                <img src="./img/t.jpeg" class="d-block w-100" alt="">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouseControls" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouseControls" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </section>
+        </header>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <h2 class="card-title">Лучшие товары месяца</h2>
+                <div id="carouselControler" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="row justify-content-between">
+                                <div class="col col-sm">
+                                    <div class="card w-100" >
+                                        <img src="./img/jewel2.jpeg" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Золотое кольцо «Бриллианты Якутии»</h5>
+                                            <p class="card-text"><b>Артикул: 57830</b></p>
+                                            <p class="card-text">Кольцо «Бриллианты Якутии» с 1 бриллиантом, 0.05 карат, цвет 3, чистота 6</p>
+                                            <p class="card-text-price">21990₽ <s>73000</s>₽</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-sm">
+                                    <div class="card w-100" >
+                                        <img src="./img/jewel.jpeg" class="card-img-top" alt="">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Золотое украшение топазами и бриллиантами</h5>
+                                            <p class="card-text"><b>Артикул: 96626</b></p>
+                                            <p class="card-text">Шейное укр. с 3 бриллиантами, 0.03 карат, Белое золото 585 пробы</p>
+                                            <p class="card-text-price">23990₽ <s>79960</s>₽</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-sm">
+                                    <div class="card w-100" >
+                                        <img src="./img/vc.png" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Золотые серьги с бриллиантами и сапфирами</h5>
+                                            <p class="card-text"><b>Артикул: 92383</b></p>
+                                            <p class="card-text">Серьги с 38 бриллиантами, 0.49 карат, цвет 3 <br>Белое золото 585 пробы</p>
+                                            <p class="card-text-price">44990₽ <s>149967</s>₽</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-sm">
+                                    <div class="card w-100" >
+                                        <img src="./img/fgfgd.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Золотое кольцо с сапфирами и бриллиантами</h5>
+                                            <p class="card-text"><b>Артикул: 81391</b></p>
+                                            <p class="card-text">Кольцо с 30 бриллиантами, 0.12 карат, Белое золото 585 пробы</p>
+                                            <p class="card-text-price">40990₽ <s>81980</s>₽</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="row justify-content-between">
+                                <div class="col col-sm">
+                                    <div class="card w-100" >
+                                        <img src="./img/bbb.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Золотое кольцо с сапфирами и бриллиантами</h5>
+                                            <p class="card-text"><b>Артикул: 79049</b></p>
+                                            <p class="card-text">Кольцо с 22 бриллиантами, 0.59 карат, чистота 6, Белое золото 585 пробы</p>
+                                            <p class="card-text-price">55190₽ <s>140000</s>₽</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-sm">
+                                    <div class="card w-100" >
+                                        <img src="./img/x.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Золотое обручальное кольцо с бриллиантами</h5>
+                                            <p class="card-text"><b>Артикул: 108497</b></p>
+                                            <p class="card-text">Кольцо с 150 бриллиантами, 0.26 карат, цвет 2, чистота 2</p>
+                                            <p class="card-text-price">49990₽ <s>99080</s>₽</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-sm">
+                                    <div class="card w-100" >
+                                        <img src="./img/ff.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Золотое кольцо с бриллиантами</h5>
+                                            <p class="card-text"><b>Артикул: 82125</b></p>
+                                            <p class="card-text">Кольцо с 48 бриллиантами, огранка круг 57 граней, 0.23 карат</p>
+                                            <p class="card-text-price">62888₽ <s>120000</s>₽</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col col-sm">
+                                    <div class="card w-100" >
+                                        <img src="./img/jewel3.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Золотое кольцо «Бриллианты Якутии»</h5>
+                                            <p class="card-text"><b>Артикул: 98053</b></p>
+                                            <p class="card-text">Кольцо «Бриллианты Якутии» с 1 бриллиантом, 0.15 карат, цвет 3</p>
+                                            <p class="card-text-price">58990₽ <s>117272</s>₽</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselControler" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselControler" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden"></span>
+                    </button>
+                        </div>
+                    </div>
+                </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <h3 class="card-title">Ювелирные заводы</h3>
+                    <div class="col">
+                        <img class="card-img-bottom" src="./img/zavod.jpeg" alt="">
+                        <a  href="main-index.html"><p class="text-danger">Подробнее</p></a>
+                    </div>
+                    <div class="col">
+                        <img class="card-img-bottom" src="./img/zavod2.jpeg" alt="">
+                        <a  href="main-index.html"><p class="text-danger">Подробнее</p></a>
+                    </div>
+                    <div class="col">
+                        <img class="card-img-bottom" src="./img/zavod3.jpeg" alt="">
+                        <a  href="main-index.html"><p class="text-danger">Подробнее</p></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <h3 class="card-title">Успей купить</h3>
+                    <div class="col">
+                        <img class="card-img-bottom" src="./img/ff.jpeg" alt="">
+                        <a  href="main-index.html">
+                            <p class="text-black">FRESH</p>
+                            <p class="text-black">38888₽ <s>79888</s>₽</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <img class="card-img-bottom" src="./img/df.jpeg" alt="">
+                        <a  href="main-index.html">
+                            <p class="text-black">OLYMP</p>
+                            <p class="text-black">28221₽ <s>65000</s>₽</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <img class="card-img-bottom" src="./img/as.jpeg" alt="">
+                        <a  href="main-index.html">
+                            <p class="text-black">SUNSTONE</p>
+                            <p class="text-black">70888₽ <s>100900</s>₽</p>
+                        </a>
+                    </div>
+                    <div class="col">
+                        <img class="card-img-bottom" src="./img/qwe.jpeg" alt="">
+                        <a  href="main-index.html">
+                            <p class="text-black">GOOLDBEAT</p>
+                            <p class="text-black">55000₽ <s>70993</s>₽</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="text-footer">
+                <h5 class="title-footer">ЮВЕЛИРНЫЙ ИНТЕРНЕТ-МАГАЗИН OLYMP <img class="icon-olymp" src="/img/premium-icon-olympus-3629219.png" alt=""></h5>
+                <h5 class="about-text">OLYMP - первая российская сеть ювелирных гипермаркетов. В каждом нашем салоне представлены товары более чем 40 производителей из 6 стран мира. Мы собрали лучшие ювелирные бренды в одном каталоге ювелирных изделий Olymp, поэтому Вам больше не нужно никуда идти: все украшения, от детских серег до обручальных колец, можно найти на официальном сайте OLYMP. Есть здесь изделия из золота с бриллиантами, серебро с драгоценными камнями, яркая эмаль, стильные часы, мужские аксессуары, доступная бижутерия на каждый день. </h5>
+            </div>
+            <div class="footer-icons">
+                <a href="https://facebook.com" target="_blank">
+                    <img class="icon-footer" src="./img/icons/facebook%20(1).png" alt="">
+                </a>
+                <a href="https://instagram.com" target="_blank">
+                    <img class="icon-footer" src="./img/icons/instagram.png" alt="">
+                </a>
+                <a href="https://vk.com" target="_blank">
+                    <img class="icon-footer" src="./img/icons/Mezhdunarodny.png" alt="">
+                </a>
+                <a href="https://ok.ru" target="_blank">
+                    <img class="icon-footer" src="./img/icons/odnoklassniki.png" alt="">
+                </a>
+                <a href="https://youtube.com" target="_blank">
+                    <img class="icon-footer" src="./img/icons/youtube.png" alt="">
+                </a>
+            </div>
+            <div class="footer">
+                <p id="footer-roots">© Интернет-магазин OLYMP <img class="icon-olymp" src="./img/premium-icon-olympus-3629219.png" alt=""><br>2021</p>
+            </div>
+        </footer>
+
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js"></script>
+    </body>
+</html>

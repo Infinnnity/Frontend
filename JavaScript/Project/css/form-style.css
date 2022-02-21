@@ -1,0 +1,366 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+
+.er-text {
+    color: white;
+    font-size: 1.5em;
+    border-radius: 30px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background: #dc3545;
+}
+
+.error-box {
+    position: fixed;
+    top: 20px;
+}
+
+body {
+    margin: 0;
+    background: #c5e8ef;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 130px;
+}
+
+.frame {
+    border-radius: 20px;
+    display: inline-block;
+    padding-left: 45px;
+    padding-right: 45px;
+    box-sizing: border-box;
+    box-shadow: 4px  1px 10px red;
+}
+
+.frame__title {
+    border: none;
+    color: #787878;
+    font-size: 50px;
+    line-height: 50px;
+    font-style: normal;
+    font-family:sans-serif;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 4px;
+    width: auto;
+}
+
+.frame__block_input-email {
+    display: flex;
+    align-items: center;
+    color: #787878;
+    margin-top: 13px;
+}
+
+.frame__block_input-email_visible {
+    color: #CB2424;
+}
+
+.block-email {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4px;
+    width: 100%;
+}
+
+.frame__block_input-pass {
+    display: flex;
+    align-items: center;
+    color: #787878;
+    margin-top: 13px;
+}
+
+.frame__block_input-pass_visible {
+    color: #CB2424;
+}
+
+.block-pass {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4px;
+    width: 100%;
+}
+
+.input__name {
+    font-size: 16px;
+    width: fit-content;
+    font-family: 'Secular One', sans-serif;
+    font-weight: 300;
+    display: block;
+    padding-left: 8px;
+    margin-bottom: 3px;
+}
+
+input.input-email {
+    box-sizing: border-box;
+    color: #787878;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+    border: 2px solid #787878;
+    border-radius: 10px;    
+    padding: 6px 0 7px 15px;
+    width: 100%;
+}
+
+input.input-email_visible {
+    border-color: #CB2424;
+}
+
+.error_email {
+    font-size: 10px;
+    line-height: 16px;
+    color: #CB2424;
+    display: none;
+    margin: 0;
+}
+
+.error_email.error_email_visible {
+    display: block;
+}
+
+.error_email-valid {
+    font-size: 10px;
+    line-height: 16px;
+    color: #CB2424;
+    display: none;
+    margin: 0;
+}
+
+.error_email-valid.error_email-valid_visible {
+    display: block;
+}
+
+.error_pass {
+    display: none;
+    font-size: 10px;
+    line-height: 16px;
+    color: #CB2424;
+    margin: 0;
+}
+
+.error_pass.error_pass_visible {
+    display: block;
+}
+
+.error_pass-valid {
+    font-size: 10px;
+    line-height: 16px;
+    color: #CB2424;
+    display: none;
+    margin: 0;
+}
+
+.error_pass-valid_visible {
+    display: block;
+}
+
+.error_checkbox {
+    display: none;
+    color: #CB2424;
+    margin: 0;
+}
+
+.error_checkbox_visible {
+    display: block;
+}
+
+.inner-box__checkbox-error {
+    font-size: 10px;
+    line-height: 16px;
+    color: #CB2424;
+    flex-direction: column;
+}
+
+
+.input-email:active {
+    color: darkkhaki;
+}
+
+input.input-password {
+    box-sizing: border-box;
+    font-size: 28px;
+    line-height: 36px;
+    font-weight: bold;
+    border: 2px solid #787878;
+    border-radius: 10px;
+    padding: 6px 0 7px 15px;
+    width: 100%;
+}
+
+input.input-password_visible {
+    border-color: #CB2424;
+}
+
+.input-email::placeholder {
+    color: #CCCCCC;
+}
+
+.input-email:hover {
+    border: 2px solid #dc3545;
+    box-shadow: 4px  1px 10px red;
+}
+
+.input-password::placeholder {
+    color: #CCCCCC;
+}
+
+.input-password:hover {
+    border: 2px solid #dc3545;
+    box-shadow: 4px  1px 10px red;
+}
+
+.frame__checkbox-block {
+    display: flex;
+    color: #787878;
+    margin-top: 16px;
+}
+
+.checkbox-block__inner-box {
+    display: flex;
+    flex-direction: column;
+    margin-left: 4px;
+}
+
+.inner-box__checkbox-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    color: #787878;
+    text-align: left;
+}
+
+#input-checkbox {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+}
+
+.checkbox-wrapper__checkbox-mark {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #787878;
+
+    border-radius: 7px;
+}
+
+.checkbox-wrapper__checkbox-mark_visible {
+    border-color: #CB2424;
+}
+
+#input-checkbox:hover + .checkbox-wrapper__checkbox-mark {
+    border: 2px solid rgb(255, 162, 13);
+    box-shadow: 4px  1px 10px red;
+}
+
+
+#input-checkbox:checked + .checkbox-wrapper__checkbox-mark::after {
+    content: "✔";
+    padding-left: 4px;
+    font-size: 18px;
+    color: rgb(91, 13, 236);
+}
+
+.checkbox-wrapper__checkbox-label {
+    padding-left: 10px;
+    width: fit-content;
+    font-size: 14px;
+    font-style: normal;
+}
+
+.span_visible {
+    color: #CB2424;
+}
+
+
+.frame__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 56px;
+    margin-bottom: 26px;
+    opacity: 1;
+}
+
+.btn-size {
+    background: #1A226B;
+    font-size: 24px;
+    font-style: normal;
+    padding: 18px 56px 18px 55px;
+    color: #FFFFFF;
+    border-radius: 10px;
+} 
+
+.btn-size:hover {
+    opacity: .8;
+    border: 2px solid yellow;
+    box-shadow: 0 0 10px red;
+    color: rgb(243, 13, 193);
+}
+
+
+
+@media screen and (min-width:320px) and (max-width:768px) {
+.body {
+    margin: 0;
+}
+
+.container {
+    margin: 0;
+    box-sizing: border-box;
+    padding-top: 50px;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.frame {
+    width: 100%;
+}
+
+.frame__title {
+    font-size: 60px;
+    min-width: auto;
+}
+
+.input__name {
+    font-size: 24px;
+}
+
+.checkbox-wrapper__checkbox-mark {
+    width: 32px;
+    height: 32px;
+}
+
+.checkbox-wrapper__checkbox-label {
+    font-size: 18px;
+}
+
+#checkbox-wrapper__input-checkbox:hover + .checkbox-wrapper__checkbox-mark {
+    border: 2px solid rgb(255, 13, 162)
+}
+
+#checkbox-wrapper__input-checkbox:checked + .checkbox-wrapper__checkbox-mark::after {
+    content: "✔";
+    font-size: 35px;
+    color: rgb(236, 13, 50);
+ } 
+
+ .btn-size {
+    font-size: 32px;
+ }
+
+ .btn-size:hover {
+     color:rgb(118, 11, 240, 1);
+     border: 2px solid red;
+ }
+}

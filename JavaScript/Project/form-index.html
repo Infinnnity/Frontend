@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <title>Регистрация</title>
+        <link rel="stylesheet" href="./css/bootstrap.min.css">
+        <link rel="stylesheet" href="/css/main.css">
+        <link rel="stylesheet" type="text/css" href="./css/form-style.css">
+    </head>
+    <body>
+        <form name="main" class="container" action="" novalidate>
+            <div class="error-box"></div>
+            <div class="frame">
+                <h3 class="frame__title">Вход</h3>
+                <div class="frame__block_input-email">
+                    <span>*</span>
+                    <div class="block-email">
+                        <label class="input__name">E-mail</label>
+                        <label>
+                            <input type="email" class="input-email" placeholder="Введите E-mail">
+                        </label>
+                        <p class="error_email">Поле обязательно для заполнения!</p>
+                        <p class="error_email-valid">Email невалидный!</p>
+                    </div>
+                </div>
+                <div class="frame__block_input-pass">
+                    <span>*</span>
+                    <div class="block-pass">
+                        <label class="input__name">Пароль</label>
+                        <label>
+                            <input type="password" class="input-password" placeholder="Введите пароль">
+                        </label>
+                        <p class="error_pass">Поле обязательно для заполнения!</p>
+                        <p class="error_pass-valid">Пароль должен содержать как минимум 8 символов!</p>
+                    </div>
+                </div>
+                <div class="frame__checkbox-block">
+                    <span class="span">*</span>
+                    <div class="checkbox-container__inner-box">
+                        <div class="inner-box__checkbox-wrapper">
+                            <label for="input-checkbox"></label><input type="checkbox" id="input-checkbox">
+                            <div class="checkbox-wrapper__checkbox-mark"></div>
+                            <label class="checkbox-wrapper__checkbox-label">Я согласен с <a href="#">Правилами пользования приложения</a></label>
+                        </div>
+                        <div class="inner-box__checkbox-error">
+                            <p class="error_checkbox">Поле обязательно для заполнения!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="frame__btn">
+                    <button class="btn-size" id="btn">Войти</button>
+                </div>
+                </div>
+            </form>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/form-js.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
