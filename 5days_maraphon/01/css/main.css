@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+/*
+В перспективе вполне сойдет под сайт с фильмами :)
+ */
+body {
+    font-family: "Noto Serif", serif;
+    overflow: hidden;
+    margin: 0;
+    background: #111;
+    height: 100vh;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+
+.name {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    color: darkorange;
+    border-bottom: 10px solid red;
+    border-radius: 10px;
+    box-shadow: 3px 0 20px magenta;}
+
+.name:hover {
+    border-radius: 20px;
+    box-shadow: 3px 0 20px magenta;
+    color: #ffffff;
+}
+
+.box-container {
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+}
+
+.box-container__img {
+    height: 60vh;
+    border-radius: 20px;
+    margin: 10px;
+    cursor: pointer;
+    flex: 1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    transition: all 500ms ease-in-out;
+}
+
+.box-container__img:hover {
+    box-shadow: 3px 0 20px magenta;
+}
+
+.box-container__img h3 {
+    position: absolute;
+    font-size: 24px;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.box-container__img.active {
+    flex: 10;
+}
+
+.box-container__img.active:hover {
+    box-shadow: 3px 0 20px red;
+}
+
+.box-container__img.active h3 {
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+    color: #fff;
+    text-shadow: 7px 20px darkorange;
+    font-size: 2em;
+}
